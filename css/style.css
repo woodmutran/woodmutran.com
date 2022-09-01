@@ -141,6 +141,10 @@ header .grid-layout nav .nav-list li a {
     flex-direction: column;
 }
 
+#home-container-text a {
+	text-decoration: none;
+}
+
 #s-home .grid-layout #home #home-container-text h1 .typewriter {
     font-family: "Saira";
 }
@@ -212,6 +216,17 @@ element.style {
 #s-home .grid-layout #home #home-container-photo .object {
     animation: MoveUpDown 4s linear infinite;
 }
+
+.ctaIcon {
+	width: 15px;
+	height: 15px;
+	background-image: url('../img/iconDownload.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	display: inline-block;
+	margin-left: 1rem;
+  }
 /* /HOME */
 
 /* ABOUT */
@@ -1231,14 +1246,6 @@ footer .grid-layout div img {
 	.podcastTxt p {
 		font-size: 1.1rem;
 	}
-
-	/* .ctaArea {
-	display: inline-block;
-}
-
-.ctaCart, .ctaDefault {
-width: 40%;
-} */
 
 .thumb-podcast {
 	position: relative;
