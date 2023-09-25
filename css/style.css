@@ -287,6 +287,7 @@ element.style {
     color: #000;
     font-family: "Libre Baskerville";
     font-size: 2.5rem;
+    font-weight: normal;
     font-line-height: 160%;
 }
 /* /ABOUT */
