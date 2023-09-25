@@ -34,18 +34,18 @@ element.style {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: "Saira";
+	font-family: "Libre Baskerville";
 }
 
 @font-face {
-    font-family: Saira;
-	src:  url(/fonts/saira-regular-webfont.woff) format('woff2'),
-	url(/fonts/saira-regular-webfont.woff2) format('woff');
+    font-family: Libre Baskerville;
+	src:  url(/fonts/LibreBaskerville-Bold.woff) format('woff'),
+	url(/fonts/LibreBaskerville-Regular.woff) format('woff');
 }
 
 body {
-    font-family: Saira;
-    background-color: #fafafa;
+    font-family: Libre Baskerville;
+    background-color: #f7be26;
 }
 
 html {
@@ -63,15 +63,20 @@ img {
     display: block;
 }
 
+img.avatar {
+	width: 214px;
+  height: auto;
+}
+
 /* HEADER */
 header {
-    background: rgba(10,10,25,0.7);
+    background: #f7be26;
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
     border-bottom: 1px solid rgba(114,114,126,0.2);
     z-index: 999;
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
 }
@@ -91,7 +96,8 @@ header .grid-layout nav {
 }
 
 header .grid-layout nav img {
-    width: 150px;
+    width: 70px;
+		padding: 1rem;
 }
 
 .mobile-menu {
@@ -108,10 +114,10 @@ header .grid-layout nav .nav-list li {
 }
 
 header .grid-layout nav .nav-list li a {
-    color: #b0b0b0;
+    color: #000;
     position: relative;
     font-size: 1.8rem;
-    font-family: Saira;
+    font-family: Libre Baskerville;
 	text-decoration: none;
 }
 /* /HEADER */
@@ -119,7 +125,7 @@ header .grid-layout nav .nav-list li a {
 /* HOME */
 #s-home {
     padding: 0px 50px;
-    background-color: #06090f;
+    background-color: #f7be26;
     position: relative;
 }
 
@@ -146,7 +152,7 @@ header .grid-layout nav .nav-list li a {
 }
 
 #s-home .grid-layout #home #home-container-text h1 .typewriter {
-    font-family: "Saira";
+    font-family: "Libre Baskerville";
 }
 
 .typewriter:after {
@@ -165,10 +171,10 @@ element.style {
 }
 
 #s-home .grid-layout #home #home-container-text h1 {
-    color: #fafafa;
+    color: #000;
     font-size: 2.4rem;
     font-weight: 400;
-    font-family: Saira;
+    font-family: Libre Baskerville;
 }
 
 #s-home .grid-layout #home #home-container-text h1 #home-name {
@@ -176,9 +182,8 @@ element.style {
     font-weight: 500;
 }
 
-#s-home .grid-layout #home #home-container-text a {
-    background: linear-gradient(89.16deg, #06090F -7.21%, #00A3FF 148.5%);
-    color: #fafafa;
+#s-about .grid-layout a {
+    background: #000;
     backdrop-filter: blur(10px);
     padding: 15px 30px;
     max-width: 250px;
@@ -188,9 +193,11 @@ element.style {
     border: 1px solid #00A3FF;
     transition: all 0.4s ease;
     margin-top: 30px;
-    font-size: 18px;
+    font-size: 2rem;
     font-weight: 400;
-    font-family: Saira;
+    font-family: Libre Baskerville;
+		color: #fff;
+		text-decoration: none;
 }
 
 #s-home .grid-layout #home #home-container-text img {
@@ -232,7 +239,8 @@ element.style {
 /* ABOUT */
 #s-about {
     padding: 96px 48px;
-    background-color: #0b0a17;
+    background-color: #f7be26;
+		border-bottom: 1px solid rgba(114,114,126,0.2);
 }
 
 
@@ -250,7 +258,7 @@ element.style {
 
 #s-about .grid-layout #about-photo {
     width: 50%;
-    padding-right: 100px;
+    /* padding-right: 100px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -264,7 +272,7 @@ element.style {
 
 #s-about .grid-layout #about-text h2 {
     padding-bottom: 24px;
-    color: #fafafa;
+    color: #000;
     font-size: 4rem;
     font-weight: 500;
 }
@@ -275,10 +283,10 @@ element.style {
 }
 
 #s-about .grid-layout #about-text p {
-    line-height: 3rem;
-    color: #b0b0b0;
-    font-family: "Saira";
-    font-size: 2rem;
+    line-height: 3.5rem;
+    color: #000;
+    font-family: "Libre Baskerville";
+    font-size: 2.5rem;
     font-line-height: 160%;
 }
 /* /ABOUT */
@@ -331,7 +339,8 @@ element.style {
 #s-projects {
     padding: 96px 48px;
     text-align: center;
-    background-color: #06090f;
+    /* background-color: #06090f; */
+		background-color: #f7be26;
 }
 
 .grid-layout {
@@ -414,11 +423,48 @@ element.style {
 }
 /* /PROJECTS */
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+	justify-content: center;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 40%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
 
 /* FOOTER */
 footer {
     text-align: center;
     margin-top: 72px;
+		background-color: #000;
 }
 
 footer .grid-layout {
@@ -442,23 +488,16 @@ footer .grid-layout #direitos-autorais {
 }
 
 footer .grid-layout p {
-    color: #b0b0b0;
+    color: #fff;
     text-align: center;
-    font-family: "Saira";
-    font-size: 1.8rem;
+    font-family: "Libre Baskerville";
+    font-size: 1.5rem;
 }
 
 footer .grid-layout div {
     margin-top: 24px;
     display: flex;
     align-items: center;
-}
-
-footer .grid-layout p {
-    color: #b0b0b0;
-    text-align: center;
-    font-family: "Saira";
-    font-size: 1.8rem;
 }
 
 footer .grid-layout div img {
@@ -851,7 +890,7 @@ footer .grid-layout div img {
     max-width: 500px;
     line-height: 3.2rem;
     color: #b0b0b0;
-    font-family: "Saira";
+    font-family: "Libre Baskerville";
     font-size: 1.8rem;
 }
 
@@ -918,9 +957,9 @@ footer .grid-layout div img {
 #return-to-top {
 	z-index: 1000;
 	position: fixed;
-	bottom: 30px;
+	bottom: 80px;
 	right: 60px;
-	background: #7b27ff;
+	background: #000;
 	width: 40px;
 	height: 40px;
 	text-decoration: none;
@@ -955,7 +994,7 @@ footer .grid-layout div img {
 }
 
 #return-to-top:hover {
-	background: #00a3ff;
+	background: #000;
 }
 
 #return-to-top:hover i {
@@ -1095,6 +1134,22 @@ footer .grid-layout div img {
 		font-size: 1.2rem;
 		line-height: 1.8rem;
 	}
+}
+
+@media only screen and (max-width: 769px){
+	#s-about .grid-layout #about {
+		 display: inline-block;
+	}
+
+	#s-about .grid-layout #about-text {
+    width: 100%;
+}
+
+#s-about .grid-layout #about-photo {
+	  width: 100%;
+    padding-bottom: 3rem;
+		padding-right: 100px;
+}
 }
 
 @media only screen and (max-width: 999px){
