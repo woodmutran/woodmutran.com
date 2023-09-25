@@ -189,7 +189,7 @@ element.style {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #00A3FF;
+    border: 1px solid #fff;
     transition: all 0.4s ease;
     margin-top: 30px;
     font-size: 2rem;
