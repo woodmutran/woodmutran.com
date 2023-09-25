@@ -39,8 +39,7 @@ element.style {
 
 @font-face {
     font-family: Libre Baskerville;
-	src:  url(/fonts/LibreBaskerville-Bold.woff) format('woff'),
-	url(/fonts/LibreBaskerville-Regular.woff) format('woff');
+	src: url(/fonts/LibreBaskerville-Regular.woff) format('woff');
 }
 
 body {
