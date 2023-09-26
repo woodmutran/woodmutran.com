@@ -495,14 +495,19 @@ footer .grid-layout p {
 }
 
 footer .grid-layout div {
-    margin-top: 24px;
     display: flex;
-    align-items: center;
+		align-items: center;
+		justify-content: space-around;
 }
 
 footer .grid-layout div img {
     width: 24px;
     margin-left: 8px;
+}
+
+.icons {
+	width: 27px;
+	margin-left: 2rem;
 }
 /* /FOOTER */
 
@@ -854,104 +859,6 @@ footer .grid-layout div img {
 	width: 48px;
 	height: 48px;
 }
-
-/*------------------SKILLS------------------*/
-#s-skills {
-    padding: 96px 48px;
-    background-color: #080c13;
-    padding-bottom: 32px;
-}
-
-#s-skills .grid-layout #skills {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    height: auto;
-    padding: 8px;
-}
-
-#s-skills .grid-layout #skills #skills-text {
-    min-height: 300px;
-}
-
-#s-skills .grid-layout #skills div, #s-skills .grid-layout #skills article {
-    width: 50%;
-}
-
-#s-skills .grid-layout #skills #skills-text h2 {
-    margin-bottom: 32px;
-    color: #fafafa;
-    font-size: 3.2rem;
-    font-weight: 500;
-}
-
-#s-skills .grid-layout #skills #skills-text p {
-    max-width: 500px;
-    line-height: 3.2rem;
-    color: #b0b0b0;
-    font-family: "Libre Baskerville";
-    font-size: 1.8rem;
-}
-
-#s-skills .grid-layout #skills #skills-text h2 span {
-    color: #00a3ff;
-    font-size: 64px;
-}
-
-#s-skills .grid-layout #skills #skills-text .changeDescription {
-    transition: 2s all ease;
-}
-
-#s-skills .grid-layout #skills #skills-text {
-    min-height: 300px;
-}
-
-#s-skills .grid-layout #skills #skills-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-}
-
-#s-skills .grid-layout #skills #skills-cards article {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 20%;
-    flex-grow: 1;
-    height: 130px;
-    background-color: #06090f;
-    position: relative;
-    border: 1px solid #06090f;
-    transition: 1s all ease;
-}
-
-#s-skills .grid-layout #skills #skills-cards article .skills-cards-name-high {
-    top: -50px;
-}
-
-#s-skills .grid-layout #skills #skills-cards article .skills-cards-name, #s-skills .grid-layout #skills #skills-cards article .skills-cards-name-high, #s-skills .grid-layout #skills #skills-cards article .skills-cards-name-low {
-    left: 50%;
-    height: auto;
-    position: absolute;
-    padding: 5px;
-    transform: translate(-50%, 0%);
-    background-color: #06090f;
-    width: 125px;
-    color: #fafafa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-    font-size: 1.8rem;
-}
-
-#s-skills .grid-layout #skills #skills-cards article .skills-icons {
-    width: 60px;
-}
-/*------------------/SKILLS------------------*/
 
 /* -------SCROLL TO TOP------ */
 #return-to-top {
