@@ -63,7 +63,7 @@ img {
 }
 
 img.avatar {
-	width: 214px;
+	width: 300px;
   height: auto;
 }
 
@@ -247,7 +247,7 @@ element.style {
 #s-about .grid-layout #about {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 
