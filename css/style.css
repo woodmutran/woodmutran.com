@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
-:root {
-	--mainBg: #222632;
-	--btnListen: #FFEBB3;
-	--btnBot: #0080ff;
-	--margin: 0 auto 25px;
-}
-
 ::-webkit-scrollbar-thumb {
     background-color: #00a3ff;
     border-radius: 8px;
@@ -44,7 +37,8 @@ element.style {
 
 body {
     font-family: Libre Baskerville;
-    background-color: #f7be26;
+    background-color: #fbeb1b;
+		/* background-color:#88fc4d; */
 }
 
 html {
@@ -62,11 +56,6 @@ img {
     display: block;
 }
 
-img.avatar {
-	width: 300px;
-  height: auto;
-}
-
 .smallTxt {
 	font-size: 3rem;
   line-height: 4rem;
@@ -82,7 +71,6 @@ img.avatar {
 
 /* HEADER */
 header {
-    background: #f7be26;
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
     border-bottom: 1px solid rgba(114,114,126,0.2);
@@ -91,6 +79,7 @@ header {
     /* position: fixed; */
     top: 0;
     left: 0;
+		text-decoration: underline;
 }
 
 .grid-layout {
@@ -204,10 +193,6 @@ element.style {
 		text-decoration: none;
 }
 
-#s-about .grid-layout .whatsCTA {
-	margin: 4rem 0 0;
-}
-
 #s-home .grid-layout #home #home-container-text img {
 	max-width: 15%;
     height: auto;
@@ -247,10 +232,8 @@ element.style {
 /* ABOUT */
 #s-about {
     padding: 96px 48px;
-    background-color: #f7be26;
 		border-bottom: 1px solid rgba(114,114,126,0.2);
 }
-
 
 .grid-layout {
     max-width: 1140px;
@@ -300,8 +283,7 @@ element.style {
 #s-projects {
     padding: 0px 48px;
     text-align: center;
-    /* background-color: #06090f; */
-		background-color: #f7be26;
+		margin-bottom: 72px;
 }
 
 .grid-layout {
@@ -420,16 +402,9 @@ element.style {
   }
 }
 
-.whatsCTA {
-	max-width: 255px;
-  display: inline-block;
-  margin: 6rem 0 0;
-}
-
 /* FOOTER */
 footer {
     text-align: center;
-    margin-top: 72px;
 		background-color: #000;
 }
 
