@@ -433,6 +433,7 @@ footer .grid-layout p {
     text-align: center;
     font-family: "Libre Baskerville";
     font-size: 1.5rem;
+		margin-left: 0.5rem;
 }
 
 footer .grid-layout div {
