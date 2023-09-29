@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- ALTERAR INFOS DA PÁGINA -->
+  <meta name="author" content="Wood Mutran">
+  <link rel="shortcut icon" type="image/x-icon" href="https://raw.githubusercontent.com/woodmutran/woodmutran.com/main/assets/wm-favicon.svg"/>
+  <title>Empiricus - Wood Mutran</title>
+  <link href="https://woodmutran.com/empiricus/" rel="canonical">
+  <!-- /ALTERAR INFOS DA PÁGINA -->
+
+  <!-- ALTERAR METAS DE COMPARTILHAMENTO -->
+  <meta property="og:locale" content="pt_BR"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:title" content="Empiricus - Wood Mutran"/>
+  <meta property="og:url" content="https://woodmutran.github.io/woodmutran.com/"/>
+  <meta property="og:image" content=""/>
+  <meta property="og:image:width" content="600"/>
+  <meta property="og:image:height" content="350"/>
+  <!-- /ALTERAR METAS DE COMPARTILHAMENTO -->
+
+  <!-- ALTERAR METAS DE COMPARTILHAMENTO TWITTER -->
+  <meta name="twitter:title" content="Empiricus - Wood Mutran">
+  <meta name="twitter:site" content="https://woodmutran.github.io/woodmutran.com/">
+  <meta name="twitter:image" content="">
+  <!-- /ALTERAR METAS DE COMPARTILHAMENTO TWITTER -->
+
+  <link href="../css/style.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+  <header>
+    <div class="grid-layout">
+      <nav>
+        <a href="https://woodmutran.com/">
+        <img src="../assets/wm-logo.svg" alt="Logo iuricode" width="150px" height="25px"></a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li>
+            <a href="#footer">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="s-project-title">
+        <div class="arrowReturn">
+          <a href="https://woodmutran.com/" id="return" title="retornar para a home"><i>
+            <img src="../assets/arrow-left.svg"></i></a>
+          </div>
+          <p class="bigTxt">
+            Empiricus
+          </p>
+  </section>
+
+      <section class="project">
+        <div class="row">
+          <div class="columnProject">
+            <img src="assets/1.png">
+            <img src="assets/2.png">
+            <img src="assets/3.png">
+            <img src="assets/4.png">
+            <img src="assets/5.png">
+            <img src="assets/6.png">
+            <img src="assets/7.png">
+            <img src="assets/8.png">
+            <img src="assets/9.png">
+            <img src="assets/10.png">
+            <img src="assets/11.jpg">
+            <img src="assets/12.png">
+            <img src="assets/13.jpg">
+            <img src="assets/14.jpg">
+            <img src="assets/15.jpg">
+            <img src="assets/16.jpg">
+            <img src="assets/17.jpg">
+          </div>
+        </div>
+
+      </section>
+
+    <!-- DESLIZAR PARA CIMA -->
+    <div class="return-to-top">
+      <a href="javascript:" id="return-to-top" title="retornar para o topo"><i>
+        <img src="../assets/arrow-top.svg"></i></a>
+      </div>
+      <!--/DESLIZAR PARA CIMA-->
+
+
+        <footer id="footer">
+          <div class="grid-layout">
+          <div class="footer-icons">
+            <a href="mailto:woodmutran@gmail.com" target="_blank"><div class="icons"><img src="../assets/gmail.svg" alt="woodmutran@gmail.com"></div></a>
+              <a href="https://wa.me/5511960842868" target="_blank"><div class="icons"><img src="../assets/whatsapp.svg" alt="WhatsApp"></div></a>
+              <a href="https://www.linkedin.com/in/edsonmutran/" target="_blank"><div class="icons"><img src="../assets/linkedin.svg" alt="Linkedin"></div></a>
+              <a href="https://github.com/woodmutran" target="_blank"><div class="icons"><img src="../assets/github.svg" alt="GitHub"></div></a>
+            </div>
+            <div>
+              <a href="https://woodmutran.com/"><img src="../assets/wm-icon.svg" alt="logo do woodmutran" width="60px" height="60px"></a>
+              <p>© 2023</p>
+            </div>
+          </div>
+        </footer>
+
+      <script type="text/javascript">
+      //Deslizar para cima JS
+      $(window).scroll(function() {
+        if ($(this).scrollTop() >= 350) {        // Se a página for rolada mais de 50pixels
+          $('#return-to-top').fadeIn(200);    // Efeito da arrow
+        } else {
+          $('#return-to-top').fadeOut(200);   // Outro efeito da arrow
+        }
+      });
+      $('#return-to-top').click(function() {      // Quando a seta é clicada
+        $('body,html').animate({
+          scrollTop : 0                       // Subir para o topo
+        }, 500);
+      });
+      </script>
+    </body>
+    </html>
