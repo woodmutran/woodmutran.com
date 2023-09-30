@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" type="image/x-icon" href="https://raw.githubusercontent.com/woodmutran/woodmutran.com/main/assets/wm-favicon.svg"/>
+      <title>Brands - Wood Mutran</title>
+      <link href="https://woodmutran.com/css/style.css" rel="stylesheet">
+    </head>
+</head>
+
+  <header>
+    <div class="grid-layout">
+      <nav>
+        <a href="https://woodmutran.com/">
+        <img src="https://woodmutran.com/assets/wm-logo.svg" alt="Logo iuricode" width="150px" height="25px"></a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li>
+            <a href="#footer">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="s-project-title">
+        <div class="arrowReturn">
+          <a href="https://woodmutran.com/" id="return" title="retornar para a home"><i>
+            <img src="https://woodmutran.com/assets/arrow-left.svg"></i></a>
+          </div>
+          <p class="bigTxt">
+            Brands
+          </p>
+  </section>
+
+      <section class="project">
+        <div class="row">
+          <div class="columnProject">
+            <img src="assets/logos-2020-1.jpg">
+            <img src="assets/logos-2020-2.jpg">
+            <img src="assets/logos-2020-3.jpg">
+            <img src="assets/logos-2020-4.jpg">
+            <img src="assets/logos-2020-5.jpg">
+            <img src="assets/logos-2020-6.jpg">
+            <img src="assets/logos-2020-7.jpg">
+            <img src="assets/logos-2020-8.jpg">
+            <img src="assets/logos-2020-9.jpg">
+            <img src="assets/logos-2020-10.jpg">
+          </div>
+        </div>
+
+      </section>
+
+      <!-- DESLIZAR PARA CIMA -->
+      <div class="return-to-top">
+        <a href="javascript:" id="return-to-top" title="retornar para o topo"><i>
+          <img src="https://woodmutran.com/assets/arrow-top.svg"></i></a>
+        </div>
+        <!--/DESLIZAR PARA CIMA-->
+
+
+          <footer id="footer">
+            <div class="grid-layout">
+            <div class="footer-icons">
+              <a href="mailto:woodmutran@gmail.com" target="_blank"><div class="icons"><img src="https://woodmutran.com/assets/gmail.svg" alt="woodmutran@gmail.com"></div></a>
+                <a href="https://wa.me/5511960842868" target="_blank"><div class="icons"><img src="https://woodmutran.com/assets/whatsapp.svg" alt="WhatsApp"></div></a>
+                <a href="https://www.linkedin.com/in/edsonmutran/" target="_blank"><div class="icons"><img src="https://woodmutran.com/assets/linkedin.svg" alt="Linkedin"></div></a>
+                <a href="https://github.com/woodmutran" target="_blank"><div class="icons"><img src="https://woodmutran.com/assets/github.svg" alt="GitHub"></div></a>
+              </div>
+              <div>
+                <a href="https://woodmutran.com/"><img src="https://woodmutran.com/assets/wm-icon.svg" alt="logo do woodmutran" width="60px" height="60px"></a>
+                <p>© 2023</p>
+              </div>
+            </div>
+          </footer>
+
+      <script type="text/javascript">
+      //Deslizar para cima JS
+      $(window).scroll(function() {
+        if ($(this).scrollTop() >= 350) {        // Se a página for rolada mais de 50pixels
+          $('#return-to-top').fadeIn(200);    // Efeito da arrow
+        } else {
+          $('#return-to-top').fadeOut(200);   // Outro efeito da arrow
+        }
+      });
+      $('#return-to-top').click(function() {      // Quando a seta é clicada
+        $('body,html').animate({
+          scrollTop : 0                       // Subir para o topo
+        }, 500);
+      });
+      </script>
+    </body>
+    </html>
